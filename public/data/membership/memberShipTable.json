@@ -1,0 +1,52 @@
+[
+    {
+        "id": "637b352cb8fa5706fdfe8390",
+        "name" : "Regular Update",
+        "free": "no",
+        "basic": "yes",
+        "starter": "yes",
+        "professional": "yes",
+        "advance": "yes"
+        
+    },
+    {
+        "id": "637b352cb8fa5706fdfe8390w",
+        "name" : "Paid Post",
+        "free": "no",
+        "basic": "no",
+        "starter": "yes",
+        "professional": "yes",
+        "advance": "yes"
+        
+    },
+    {
+        "id": "637b352cb8fa5706fdfewe8390",
+        "name" : "Support independent publishing",
+        "free": "no",
+        "basic": "no",
+        "starter": "no",
+        "professional": "yes",
+        "advance": "yes"
+        
+    },
+    {
+        "id": "637b352cb8fa5706ffdfe8390",
+        "name" : "Q&A Session",
+        "free": "no",
+        "basic": "no",
+        "starter": "no",
+        "professional": "no",
+        "advance": "yes"
+        
+    },
+    {
+        "id": "637b352cb8fa5706fdfe8390",
+        "name" : "Regular Update",
+        "free": "no",
+        "basic": "no",
+        "starter": "no",
+        "professional": "no",
+        "advance": "yes"
+        
+    }
+]

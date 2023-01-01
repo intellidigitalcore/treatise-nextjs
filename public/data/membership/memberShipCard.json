@@ -1,0 +1,57 @@
+[
+    {
+        "id": "637b352cb8fa5706fdfe8390",
+        "name" : "Free",
+        "title": "Free forever",
+        "price": 0,
+        "regularUpdate": "no",
+        "paidPost": "no",
+        "supportIndependentPublishing": "no",
+        "qaSession": "no",
+        "dedicatedSupport": "no"   
+    },
+    {
+        "id": "637b352cb8fa5706fdfe8390",
+        "name" : "Basic",
+        "title": "Student’s Favoutite",
+        "price": 49,
+        "regularUpdate": "yes",
+        "paidPost": "no",
+        "supportIndependentPublishing": "no",
+        "qaSession": "no",
+        "dedicatedSupport": "no"   
+    },
+    {
+        "id": "637b352cb8fa5706fdfe8390",
+        "name" : "Starter",
+        "title": "User Friendly",
+        "price": 99,
+        "regularUpdate": "yes",
+        "paidPost": "yes",
+        "supportIndependentPublishing": "no",
+        "qaSession": "no",
+        "dedicatedSupport": "no"   
+    },
+    {
+        "id": "637b352cb8fa5706fdfe8390",
+        "name" : "Professional",
+        "title": "Most Favourite",
+        "price": 499,
+        "regularUpdate": "yes",
+        "paidPost": "yes",
+        "supportIndependentPublishing": "yes",
+        "qaSession": "no",
+        "dedicatedSupport": "no"   
+    },
+    {
+        "id": "637b352cb8fa5706fdfe8390",
+        "name" : "Advance",
+        "title": "For all rounder",
+        "price": 999,
+        "regularUpdate": "yes",
+        "paidPost": "yes",
+        "supportIndependentPublishing": "yes",
+        "qaSession": "yes",
+        "dedicatedSupport": "yes"   
+    }
+]

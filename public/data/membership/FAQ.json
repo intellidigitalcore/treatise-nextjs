@@ -1,0 +1,42 @@
+[
+    {
+        "questions" : "Why wouldn't I just hire a full-time designer?",
+        "answer" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio blanditiis debitis sequi adipisci, in culpa doloribus dolorem, beatae, reiciendis ratione provident et maiores facilis hic! Exercitationem aliquid sit, vero veniam aliquam incidunt in! Aperiam nobis, accusantium non magnam, ipsam ducimus dolorum eius consequuntur quia culpa maiores iure mollitia consectetur in.",
+        "open" : true
+    },
+    {
+        "questions" : "Is there a limit to how many requests I can have?",
+        "answer" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quas assumenda a iste nesciunt magni nulla enim repellendus odit amet sit quos deserunt perspiciatis consectetur excepturi suscipit, omnis dolores consequuntur hic tempore unde, minima officia accusamus numquam? Iure, veniam rerum! Unde, ipsa. Eaque reprehenderit a mollitia, iusto optio expedita voluptates sit quae qui magnam dolorem neque recusandae facilis est. Minima mollitia fugiat cupiditate assumenda repudiandae eos odit dicta nulla delectus sunt, debitis tempora reprehenderit laborum iusto consectetur cum possimus officia? " ,
+        "open" : false
+    },
+    {
+        "questions" : "How fast will I receive my designs?",
+        "answer" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consectetur orci eu congue malesuada. Aliquam erat leo, euismod non tellus ac, placerat tincidunt purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis nibh metus, elementum congue tincidunt vel, elementum quis lectus. Cras placerat, urna ac lobortis tincidunt, massa magna bibendum ipsum, a faucibus neque nibh eu neque. Nam molestie fermentum orci, eu fermentum lacus vestibulum et. " ,
+        "open" : false
+    },
+    {
+        "questions" : "Who are the designers?",
+        "answer" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consectetur orci eu congue malesuada. Aliquam erat leo, euismod non tellus ac, placerat tincidunt purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis nibh metus, elementum congue tincidunt vel, elementum quis lectus. Cras placerat, urna ac lobortis tincidunt, massa magna bibendum ipsum, a faucibus neque nibh eu neque. Nam molestie fermentum orci, eu fermentum lacus vestibulum et. " ,
+        "open" : false
+    },
+    {
+        "questions" : "How do I request designs??",
+        "answer" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consectetur orci eu congue malesuada. Aliquam erat leo, euismod non tellus ac, placerat tincidunt purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis nibh metus, elementum congue tincidunt vel, elementum quis lectus. Cras placerat, urna ac lobortis tincidunt, massa magna bibendum ipsum, a faucibus neque nibh eu neque. Nam molestie fermentum orci, eu fermentum lacus vestibulum et." ,
+        "open" : false
+    },
+    {
+        "questions" : "What if I don't like the design??",
+        "answer" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consectetur orci eu congue malesuada. Aliquam erat leo, euismod non tellus ac, placerat tincidunt purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis nibh metus, elementum congue tincidunt vel, elementum quis lectus. Cras placerat, urna ac lobortis tincidunt, massa magna bibendum ipsum, a faucibus neque nibh eu neque. Nam molestie fermentum orci, eu fermentum lacus vestibulum et. " ,
+        "open" : false
+    },
+    {
+        "questions" : "What if I only have a single request?",
+        "answer" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consectetur orci eu congue malesuada. Aliquam erat leo, euismod non tellus ac, placerat tincidunt purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis nibh metus, elementum congue tincidunt vel, elementum quis lectus. Cras placerat, urna ac lobortis tincidunt, massa magna bibendum ipsum, a faucibus neque nibh eu neque. Nam molestie fermentum orci, eu fermentum lacus vestibulum et. " ,
+        "open" : false
+    },
+    {
+        "questions" : "Are there any refunds if I don't like the service??",
+        "answer" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consectetur orci eu congue malesuada. Aliquam erat leo, euismod non tellus ac, placerat tincidunt purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis nibh metus, elementum congue tincidunt vel, elementum quis lectus. Cras placerat, urna ac lobortis tincidunt, massa magna bibendum ipsum, a faucibus neque nibh eu neque. Nam molestie fermentum orci, eu fermentum lacus vestibulum et. " ,
+        "open" : false
+    }
+]
