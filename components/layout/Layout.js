@@ -1,8 +1,16 @@
 // import { Children } from "react"
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 import Footer from "../shared-components/Footer"
 import Header from "../shared-components/Header"
 
 const Layout = ({children }) =>{
+  const location =  useRouter();
+  const [pathName, setPathName] = useState("/");
+  
+  useEffect(()=>{
+    setPathName(location.pathname)
+  },[location.pathname])
 
   return (
     <>
@@ -10,7 +18,10 @@ const Layout = ({children }) =>{
         <main>
             {children}
         </main>
-        <Footer></Footer>
+        {
+            (pathName !== "/signin" && pathName !=="/signup" && pathName !=="/subscribe-membership") &&
+              <Footer></Footer>
+        }
     </>
   )
 }

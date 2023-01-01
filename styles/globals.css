@@ -293,6 +293,10 @@ header h1 {
 for sign up and login system  
 ============================== */
 
+.sign-in-up{
+    background-image: url(../public/assests/bg.webp)
+}
+
 /* custom checkbox */
 .custom-input {
 @apply block relative pl-6 mb-0 cursor-pointer;
