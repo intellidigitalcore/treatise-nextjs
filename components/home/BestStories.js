@@ -60,7 +60,7 @@ function BestStories() {
                 {
                     stories.map(story => 
                         <SwiperSlide key={story.id}>
-                            <Link href={`/blog/${story.id}`} className=""> 
+                            <Link href={`/blogdetails/${story.id}`} className=""> 
                                 <div className="border rounded-[10px] relative">
                                     <Image className="w-full rounded-t-[10px]" src={require(`../../public/assests/home/best-stories/${story.img}.webp`)} alt="" srcSet=""/>
                                     <div className="p-4">

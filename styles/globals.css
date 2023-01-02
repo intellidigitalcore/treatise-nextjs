@@ -289,6 +289,14 @@ header h1 {
     box-shadow: -4px 4px 20px rgba(0, 0, 0, 0.08);
 }
 
+/*============================ 
+all post  
+============================*/
+.all-blog-banner{
+    background-image: url(../public/assests/All-blog/all-blog-banner.webp);
+}
+
+
 /* ============================ 
 for sign up and login system  
 ============================== */
@@ -410,6 +418,20 @@ author details page
 .public-DraftStyleDefault-ltr{
     min-height: 380px;
 }
+
+
+/*==================
+ author profile  
+====================*/
+.author-banner-img{
+    background-image: url(../public/assests/Author-Profile/author-profile.webp);
+}
+
+
+/*=============
+ media query  
+ =============*/
+
 
 @media screen and (max-width: 639px) {
     .nav-items {

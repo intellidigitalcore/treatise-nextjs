@@ -103,7 +103,7 @@ function Header() {
                                 <ul className="text-[32px] md:text-[42px] lg:text-[48px] xl:text-[54px] 2xl:[64px] leading-[150%] text-nav-text flex flex-col gap-y-[24px] sm:gap-y-[38px] md:gap-y-[48px] lg:gap-y-[64px] text-center sm:text-left">
                                     <li onClick={handleMenu}><Link href="/">Home</Link></li>
                                     <li onClick={handleMenu}><Link href="/membership">Membership</Link></li>
-                                    <li onClick={handleMenu}><Link href="/author">Author</Link></li>
+                                    <li onClick={handleMenu}><Link href="/authors">Author</Link></li>
                                     <li onClick={handleMenu}><Link href="/signin" >Login</Link></li>
                                 </ul>
                         </div>
