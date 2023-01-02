@@ -7,7 +7,7 @@ function signup() {
         <div className="flex justify-center py-[80px] sm:py-[160px] h-full">
             <div className="w-[450px] mx-4 sm:mx-0 py-6 sm:py-8 px-4 sm:px-6 bg-white rounded-[10px] form-container h-fit">
                 <h2 className="text-lg leading-[23px] sm:text-[32px] font-bold lg:leading-[40px]">Sign up with you email</h2>
-                <p className="mt-4 text-text-60 text-sm sm:text-base leading-[17px] sm:leading-[20px]">Already have and account? <span className="text-primary/90"><Link href='/login'>Sign in</Link></span></p>
+                <p className="mt-4 text-text-60 text-sm sm:text-base leading-[17px] sm:leading-[20px]">Already have and account? <span className="text-primary/90"><Link href='/signin'>Sign in</Link></span></p>
 
                 <form className="mt-10" action="">
                     <div className="flex flex-col gap-y-2">
@@ -44,7 +44,7 @@ function signup() {
                     <div className="flex items-start mt-6">
                         <label className="custom-input text-sm">
                             <span className="text-sm font-semibold">I agree to the <span className="text-primary">Terms of Services</span> & <span className="text-primary">Privacy Policy</span></span>
-                            <input type="checkbox" checked="checked"/>
+                            <input type="checkbox" defaultChecked/>
                             <span className="checkmark"></span>
                         </label>
                     </div>

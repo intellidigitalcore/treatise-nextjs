@@ -10,7 +10,7 @@ function Subscribe() {
                         <p className="mt-6 sm:mt-4 text-base sm:text-xl leading-[30px] text-center lg:text-left">Start your day with treatise</p>
                     </div>
                     <div className="">
-                        <Link href="/subscribe-membership"><button className="px-[80px] sm:px-[100px] py-[13px] bg-white text-text rounded-[10px] whitespace-nowrap text-sm ">Become a Member</button></Link>
+                        <Link href="/subscribemember"><button className="px-[80px] sm:px-[100px] py-[13px] bg-white text-text rounded-[10px] whitespace-nowrap text-sm ">Become a Member</button></Link>
                     </div>
                 </div>
             </div>

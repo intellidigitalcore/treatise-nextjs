@@ -19,7 +19,7 @@ const Layout = ({children }) =>{
             {children}
         </main>
         {
-            (pathName !== "/signin" && pathName !=="/signup" && pathName !=="/subscribe-membership") &&
+            (pathName !== "/signin" && pathName !=="/signup" && pathName !=="/subscribemember") &&
               <Footer></Footer>
         }
     </>

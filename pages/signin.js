@@ -7,7 +7,7 @@ function signin() {
      <div className="flex justify-center py-[80px] sm:py-[160px] h-full w-full ">
         <div className="w-[450px] mx-4 sm:mx-0 py-6 sm:py-8 px-4 sm:px-6 bg-white rounded-[10px] form-container h-fit">
             <h2 className="text-lg leading-[23px] sm:text-[32px] font-bold sm:leading-[40px]">Sign in with you email</h2>
-            <p className="mt-4 text-text-60 text-sm sm:text-base leading-[17px] sm:leading-[20px]">Already have and account? <span className="text-primary/90"><Link href="/sign-up">Sign up</Link></span></p>
+            <p className="mt-4 text-text-60 text-sm sm:text-base leading-[17px] sm:leading-[20px]">Already have and account? <span className="text-primary/90"><Link href="/signup">Sign up</Link></span></p>
 
             <form className="mt-10" action="">
                 <div className="flex flex-col gap-y-2">

@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 function NotFoundPage() {
   return (
-    <div className="mt-[196px] sm:mt-[214px]">
+    <div className="mt-[196px] mb-[100px] sm:mt-[214px] sm:mb-[150px]">
         <div className="flex justify-center items-center mx-[5%]">
             <div className="error-part flex flex-col items-center">
                 <svg className="w-[200px] sm:w-[240px] md:w-[315px] h-[85px] sm:h-[130px] md:h-[135px]" width="315" height="135" viewBox="0 0 315 135" fill="none" xmlns="http://www.w3.org/2000/svg">
