@@ -2,18 +2,20 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react';
+import Archived from '../components/authorProfile/Archived';
 import AuthorInformation from '../components/authorProfile/AuthorInformation';
+import Draft from '../components/authorProfile/Draft';
+import Published from '../components/authorProfile/Published';
 
-function auhtorprofile() {
+function Auhtorprofile() {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     const [activebtn , setActiveBtn] = useState("profile");
 
     return (
         <div className='mt-[56px] sm:mt-[87px]'>
             {/* <!-- banner and name details  --> */}
             <div className="banner-name">
-                <div className="h-[120px] sm:h-[180px] w-full author-banner-img">
-
-                </div>
+                <div className="h-[120px] sm:h-[180px] w-full author-banner-img"> </div>
                 
                 <div className="mt-[-40px] sm:mt-[-70px] md:mt-[-95px] lg:mt-[-100px] mx-4 md:mx-[5%] lg:mx-[8%] 2xl:[15%]">
                     <div className="flex flex-col sm:flex-row gap-x-5 items-center sm:items-end ">
@@ -51,7 +53,7 @@ function auhtorprofile() {
                                 <p className="text-text-40 text-sm sm:text-[13px] md:text-base mt-2 text-center sm:text-left">Chris H</p>
                             </div>
                             <div className="edit-btn mt-10 sm:mt-0">
-                                <Link href='/create-blog'>
+                                <Link href='/createblog'>
                                     <button className="flex gap-x-3 items-center border border-primary/90 px-6  lg:px-10 py-2 lg:py-3 rounded-[8px]">
                                         <span>
                                             <svg className="w-4 md:w-6 h-4 md:h-6" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -106,7 +108,7 @@ function auhtorprofile() {
                         animate = {{opacity: 1, translateX: 0, translateY:0}}
                         transition = {{duration: 0.4, delay : 0.2}}
                         >
-                            {/* <Draft></Draft> */}
+                            <Draft></Draft>
                         </motion.div>
                     }
                     
@@ -119,7 +121,7 @@ function auhtorprofile() {
                         animate = {{opacity: 1, translateX: 0, translateY:0}}
                         transition = {{duration: 0.4, delay : 0.2}}
                         >
-                            {/* <Published></Published> */}
+                            <Published></Published>
                         </motion.div>
                     }
 
@@ -131,7 +133,7 @@ function auhtorprofile() {
                         animate = {{opacity: 1, translateX: 0, translateY:0}}
                         transition = {{duration: 0.4, delay : 0.2}}
                         >
-                            {/* <Archived></Archived> */}
+                            <Archived></Archived>
                         </motion.div>
                     }
 
@@ -141,4 +143,4 @@ function auhtorprofile() {
     )
 }
 
-export default auhtorprofile
+export default Auhtorprofile

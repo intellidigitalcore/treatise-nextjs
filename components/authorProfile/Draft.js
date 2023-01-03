@@ -13,7 +13,7 @@ function Draft() {
         })
     },[])
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-8">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-8 mb-5 sm:mb-10">
     {
         posts.map((post,i) =>
             <motion.div
@@ -21,7 +21,7 @@ function Draft() {
             animate = {{opacity: 1, translateX: 0, translateY:0}}
             transition = {{duration: 0.4, delay : i * 0.2}}
             key={post.id} className="border rounded-[10px]"> 
-                <Image className="w-full rounded-t-[10px]" src={require(`./../../assests/images/Author-Profile/draft/${post.img}.webp`)} alt="" srcSet=""/>
+                <Image className="w-full rounded-t-[10px]" src={require(`../../public/assests/Author-Profile/draft/${post.img}.webp`)} alt="" srcSet=""/>
                 <div className="p-4">
                     <p className="text-xs sm:text-sm text-text-60">{post.date}</p>
                     <p className="text-base sm:text-[18px] text-text font-bold mt-4">{post.blogTitle}</p>

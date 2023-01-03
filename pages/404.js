@@ -18,12 +18,12 @@ function NotFoundPage() {
                     a
                     <defs>
                     <radialGradient id="paint0_radial_25_417" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(377.562 168.801) rotate(-156.372) scale(412.111 170.438)">
-                    <stop stop-color="#3762E0"/>
-                    <stop offset="1" stop-color="#E63A63"/>
+                    <stop stopColor="#3762E0"/>
+                    <stop offset="1" stopColor="#E63A63"/>
                     </radialGradient>
                     <radialGradient id="paint1_radial_25_417" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(377.562 168.801) rotate(-156.372) scale(412.111 170.438)">
-                    <stop stop-color="#3762E0"/>
-                    <stop offset="1" stop-color="#E63A63"/>
+                    <stop stopColor="#3762E0"/>
+                    <stop offset="1" stopColor="#E63A63"/>
                     </radialGradient>
                     </defs>
                 </svg>

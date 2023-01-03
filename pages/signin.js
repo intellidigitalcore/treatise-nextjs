@@ -34,7 +34,7 @@ function signin() {
                 </div>
 
                 <div className="mt-7 flex justify-center">
-                    <Link  href='' className="px-6 py-3 text-sm bg-primary text-white rounded-[8px] font-bold">Sign In</Link>
+                    <Link  href='/auhtorprofile' className="px-6 py-3 text-sm bg-primary text-white rounded-[8px] font-bold">Sign In</Link>
                 </div>
 
             </form>

@@ -1,10 +1,11 @@
 import axios from "axios";
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import Subscribe from "../../components/home/Subscribe";
 
-function author() {
+function Author() {
     const router = useRouter();
     const id = router.query.authorId
    
@@ -64,7 +65,7 @@ function author() {
            <div className="mt-10 mb-7 flex gap-6 justify-center flex-wrap">
                {
                    author?.Post.map(post =>
-                       <div key={post.id} className="border rounded-[10px] w-[440px]">
+                       <Link href={`/blogdetails/${post.id}`} key={post.id} className="border rounded-[10px] w-[440px]">
                            <Image className="rounded-t-[10px] w-full" src={require(`../../public/assests/AuthorPost/${post.img}.webp`)} alt="" srcSet=""/>
                            <div className="p-4">
                                <p className="flex text-xs md:text-sm justify-between md:justify-start md:gap-x-2">
@@ -78,7 +79,7 @@ function author() {
                                    <span className="text-text-60">5 mins to read</span>
                                </p>
                            </div>
-                       </div>
+                       </Link>
                    )
                }
            </div>
@@ -94,4 +95,4 @@ function author() {
     )
 }
 
-export default author
+export default Author

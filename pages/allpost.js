@@ -5,7 +5,7 @@ import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry'
 import {motion} from 'framer-motion'
 import Image from 'next/image'
 
-function allpost() {
+function Allpost() {
 
     const [showingFilter , setShowingFilter] = useState(false)
     const [posts, setPosts] = useState([])
@@ -195,4 +195,4 @@ function allpost() {
   )
 }
 
-export default allpost
+export default Allpost
