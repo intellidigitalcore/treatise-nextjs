@@ -1,4 +1,5 @@
 import axios from 'axios';
+import Link from 'next/link';
 import { useEffect, useState } from 'react'
 
 function Card() {
@@ -106,7 +107,7 @@ function Card() {
                         </p>
 
                         <div className="flex justify-center mt-6">
-                            <button className="text-text text-sm px-10 py-3 border border-text rounded-[7px]">Start Now</button>
+                            <Link href='/subscribemember'><button className="text-text text-sm px-10 py-3 border border-text rounded-[7px]">Start Now</button></Link>
                         </div>
                     </div>
                   </div>  

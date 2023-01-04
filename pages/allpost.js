@@ -142,7 +142,7 @@ function Allpost() {
 
 <div className="mt-6 ">
 <ResponsiveMasonry
-    columnsCountBreakPoints={{350: 1, 550:2, 900: 3, 1200:4}}
+    columnscountBreakPoints={{350: 1, 550:2, 900: 3, 1200:4}}
 >
     <Masonry> 
         {
@@ -152,7 +152,7 @@ function Allpost() {
                 animate = {{opacity: 1, translateX: 0, translateY:0}}
                 transition = {{duration: 0.4, delay : i * 0.2}}
                 >
-                    <Link href=''>
+                    <Link href={`/blogdetails/${post.id}`}>
                         <div className="border rounded-[10px] h-fit">
                             <Image className="w-full rounded-t-[10px]" src={require(`../public/assests/All-blog/${post?.img}.webp`)} alt=""/>
                             <div className="p-4">
