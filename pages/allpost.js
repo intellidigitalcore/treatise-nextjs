@@ -122,14 +122,19 @@ function Allpost() {
 
         <div className="flex flex-col gap-y-2 w-full md:w-fit">
             <label className="text-sm md:text-base" htmlFor="author_tag">Timeframe</label>
-            <input className="w-full md:w-[480px] bg-[#F8F8F8] px-[18px] py-3 outline-none rounded-[8px] border-2 placeholder:text-text-40" type="text" placeholder="Timeframe"/>
+            {/* <input className="w-full md:w-[480px] bg-[#F8F8F8] px-[18px] py-3 outline-none rounded-[8px] border-2 placeholder:text-text-40" type="text" placeholder="Timeframe"/> */}
+            <select className="h-[50px] text-text-40 font-bold w-full md:w-[480px] outline-none bg-[#F8F8F8] rounded-[8px] border-2 placeholder:text-text-40 px-4">
+                <option value="sort">Select Timeframe</option>
+                <option value="New">Below 5 mins</option>
+                <option value="Popular">6-10 mins</option>
+                <option value="Featured">Above 10 mins</option>
+            </select>
         </div>
 
         <div className="flex flex-col gap-y-2 w-full md:w-fit">
             <label className="text-sm md:text-base" htmlFor="author_tag">Time</label>
             <div className="relative">
-                
-                <input id="flatpickr" className="w-full md:w-[480px] bg-[#F8F8F8] px-[18px] py-3 outline-none rounded-[8px] border-2 placeholder:text-text-40" type="date" placeholder="All Time"/>
+                <input id="flatpickr" className="w-full md:w-[480px] bg-[#F8F8F8] px-[18px] py-3 outline-none rounded-[8px] border-2 placeholder:text-text-40 text-text-40" type="date" placeholder="All Time"/>
             </div>
         </div>
 
