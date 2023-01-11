@@ -7,10 +7,22 @@ import BestStories from '../components/home/BestStories'
 import EditorsChoice from '../components/home/EditorsChoice'
 import AllPost from '../components/home/AllPost'
 import Subscribe from '../components/home/Subscribe'
+import Loader from '../components/shared-components/Loader'
+import { useEffect, useState } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
+  const [isLoading, setIsLoading] = useState(true)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false)
+    }, 1500);
+  }, [])
+
+
   return (
     <>
       <Head>
@@ -21,7 +33,10 @@ export default function Home() {
         <title>Treatise</title>
       </Head>
       
-      <div className="mt-20 sm:mt-[120px] md:[120px] lg:mt-[140px] xl:mt-[160px]">
+      {
+        isLoading ? <Loader></Loader> :
+        <div className="mt-20 sm:mt-[120px] md:[120px] lg:mt-[140px] xl:mt-[160px]">
+        
         <HeroSection></HeroSection>
 
         <BestStories></BestStories>
@@ -32,7 +47,8 @@ export default function Home() {
 
         <Subscribe></Subscribe>
 
-      </div>
+      `</div>
+      }
 
     </>
   )

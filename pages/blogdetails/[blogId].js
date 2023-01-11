@@ -3,8 +3,9 @@ import { useEffect, useState } from "react";
 import { AuthorTagsearch } from "../../components/blogDetails/AuthorTagsearch";
 import { BlogContent } from "../../components/blogDetails/BlogContent";
 import { MorePosts } from "../../components/blogDetails/MorePosts";
+import Loader from "../../components/shared-components/Loader";
 
-function blogdetails() {
+function Blogdetails() {
 
     const router = useRouter();
 
@@ -18,7 +19,16 @@ function blogdetails() {
     },[])
     const post = allStories.find(story => story.id === id)
 
+    const [isLoading, setIsLoading] = useState(true)
+
+    useEffect(() => {
+        setTimeout(() => {
+        setIsLoading(false)
+        }, 1500);
+    }, [])
+
   return (
+    isLoading ? <Loader></Loader> : 
     <div className='mt-[120px]'>
 
         <div className="blog mx-[5%] md:mx-[9.47%] xl:mx-[8%] 2xl:[9.47%] mt-6 sm:mt-10 flex flex-col md:flex-row justify-between">
@@ -44,4 +54,4 @@ function blogdetails() {
   )
 }
 
-export default blogdetails
+export default Blogdetails

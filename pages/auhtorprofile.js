@@ -1,17 +1,27 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Archived from '../components/authorProfile/Archived';
 import AuthorInformation from '../components/authorProfile/AuthorInformation';
 import Draft from '../components/authorProfile/Draft';
 import Published from '../components/authorProfile/Published';
+import Loader from '../components/shared-components/Loader';
 
 function Auhtorprofile() {
-    // eslint-disable-next-line react-hooks/rules-of-hooks
+
     const [activebtn , setActiveBtn] = useState("profile");
 
+    const [isLoading, setIsLoading] = useState(true)
+
+    useEffect(() => {
+        setTimeout(() => {
+        setIsLoading(false)
+        }, 1500);
+    }, [])
+
     return (
+       isLoading ? <Loader></Loader> :
         <div className='mt-[56px] sm:mt-[87px]'>
             {/* <!-- banner and name details  --> */}
             <div className="banner-name">
@@ -70,74 +80,74 @@ function Auhtorprofile() {
                 </div>
             </div>
 
-        <div className="">
+            <div className="">
 
-                {/* <!-- tabs menu  --> */}
-                <div className="flex justify-center mx-4 md:mx-[15%]">
-                    <div className="items-menu overflow-x-scroll scroll-bar my-8">
-                        <ul className="flex gap-x-2 sm:gap-x-6 text-text  whitespace-nowrap text-sm">
-                            <li><button onClick={()=>setActiveBtn("profile")} className={`${activebtn === 'profile' ? ' blog-active-btn':''} px-6 sm:px-7 py-2 sm:py-3 cursor-pointer font-bold`}>Profile</button></li>
-                            <li><button onClick={()=>setActiveBtn("draft")} className={`${activebtn === 'draft' ? ' blog-active-btn':''} px-6 sm:px-7 py-2 sm:py-3 cursor-pointer font-bold`} >Drafts</button></li>
-                            <li><button onClick={()=>setActiveBtn("publish")} className={`${activebtn === 'publish' ? ' blog-active-btn':''} px-6 sm:px-7 py-2 sm:py-3 cursor-pointer font-bold`}>Published</button></li>
-                            <li><button onClick={()=>setActiveBtn("archive")} className={`${activebtn === 'archive' ? ' blog-active-btn':''} px-6 sm:px-7 py-2 sm:py-3 cursor-pointer font-bold`}>Archived</button></li>
-                        </ul>
-                    </div>
+            {/* <!-- tabs menu  --> */}
+            <div className="flex justify-center mx-4 md:mx-[15%]">
+                <div className="items-menu overflow-x-scroll scroll-bar my-8">
+                    <ul className="flex gap-x-2 sm:gap-x-6 text-text  whitespace-nowrap text-sm">
+                        <li><button onClick={()=>setActiveBtn("profile")} className={`${activebtn === 'profile' ? ' blog-active-btn':''} px-6 sm:px-7 py-2 sm:py-3 cursor-pointer font-bold`}>Profile</button></li>
+                        <li><button onClick={()=>setActiveBtn("draft")} className={`${activebtn === 'draft' ? ' blog-active-btn':''} px-6 sm:px-7 py-2 sm:py-3 cursor-pointer font-bold`} >Drafts</button></li>
+                        <li><button onClick={()=>setActiveBtn("publish")} className={`${activebtn === 'publish' ? ' blog-active-btn':''} px-6 sm:px-7 py-2 sm:py-3 cursor-pointer font-bold`}>Published</button></li>
+                        <li><button onClick={()=>setActiveBtn("archive")} className={`${activebtn === 'archive' ? ' blog-active-btn':''} px-6 sm:px-7 py-2 sm:py-3 cursor-pointer font-bold`}>Archived</button></li>
+                    </ul>
                 </div>
+            </div>
 
-                <div className="">
+            <div className="">
 
-                    {/* <!-- option 01 : personal details --> */}
-                    {
-                        (activebtn === "profile") &&
-                        <motion.div className=""
-                        initial = {{opacity: 0, translateX: 0, translateY: -50}}
-                        animate = {{opacity: 1, translateX: 0, translateY:0}}
-                        transition = {{duration: 0.4, delay : 0.2}}
+                {/* <!-- option 01 : personal details --> */}
+                {
+                    (activebtn === "profile") &&
+                    <motion.div className=""
+                    initial = {{opacity: 0, translateX: 0, translateY: -50}}
+                    animate = {{opacity: 1, translateX: 0, translateY:0}}
+                    transition = {{duration: 0.4, delay : 0.2}}
 
-                        >
-                            <AuthorInformation></AuthorInformation>
-                        </motion.div>
-                    }
+                    >
+                        <AuthorInformation></AuthorInformation>
+                    </motion.div>
+                }
+            
+
+                {/* <!-- option 02 : Drafts  --> */}
+                {
+                    (activebtn === "draft") &&
+                    <motion.div id="drafts" className="mt-10 mx-6"
+                    initial = {{opacity: 0, translateX: 50, translateY: -50}}
+                    animate = {{opacity: 1, translateX: 0, translateY:0}}
+                    transition = {{duration: 0.4, delay : 0.2}}
+                    >
+                        <Draft></Draft>
+                    </motion.div>
+                }
                 
 
-                    {/* <!-- option 02 : Drafts  --> */}
-                    {
-                        (activebtn === "draft") &&
-                        <motion.div id="drafts" className="mt-10 mx-6"
-                        initial = {{opacity: 0, translateX: 50, translateY: -50}}
-                        animate = {{opacity: 1, translateX: 0, translateY:0}}
-                        transition = {{duration: 0.4, delay : 0.2}}
-                        >
-                            <Draft></Draft>
-                        </motion.div>
-                    }
-                    
+                {/* <!-- option 03 : Drafts  --> */}
+                {
+                    (activebtn === "publish") &&
+                    <motion.div id="publish" className="mt-10 mx-6"
+                    initial = {{opacity: 0, translateX: 50, translateY: -50}}
+                    animate = {{opacity: 1, translateX: 0, translateY:0}}
+                    transition = {{duration: 0.4, delay : 0.2}}
+                    >
+                        <Published></Published>
+                    </motion.div>
+                }
 
-                    {/* <!-- option 03 : Drafts  --> */}
-                    {
-                        (activebtn === "publish") &&
-                        <motion.div id="publish" className="mt-10 mx-6"
-                        initial = {{opacity: 0, translateX: 50, translateY: -50}}
-                        animate = {{opacity: 1, translateX: 0, translateY:0}}
-                        transition = {{duration: 0.4, delay : 0.2}}
-                        >
-                            <Published></Published>
-                        </motion.div>
-                    }
+                {/* <!-- option 04 : Archived  --> */}
+                {
+                    (activebtn === "archive") &&
+                    <motion.div id="archived" className="mt-10 mx-6"
+                    initial = {{opacity: 0, translateX: 50, translateY: -50}}
+                    animate = {{opacity: 1, translateX: 0, translateY:0}}
+                    transition = {{duration: 0.4, delay : 0.2}}
+                    >
+                        <Archived></Archived>
+                    </motion.div>
+                }
 
-                    {/* <!-- option 04 : Archived  --> */}
-                    {
-                        (activebtn === "archive") &&
-                        <motion.div id="archived" className="mt-10 mx-6"
-                        initial = {{opacity: 0, translateX: 50, translateY: -50}}
-                        animate = {{opacity: 1, translateX: 0, translateY:0}}
-                        transition = {{duration: 0.4, delay : 0.2}}
-                        >
-                            <Archived></Archived>
-                        </motion.div>
-                    }
-
-                </div>
+            </div>
             </div>
         </div>
     )
