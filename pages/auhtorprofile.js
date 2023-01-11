@@ -6,9 +6,12 @@ import Archived from '../components/authorProfile/Archived';
 import AuthorInformation from '../components/authorProfile/AuthorInformation';
 import Draft from '../components/authorProfile/Draft';
 import Published from '../components/authorProfile/Published';
+import useTitleHook from '../components/customHook/useTitleHook';
 import Loader from '../components/shared-components/Loader';
 
 function Auhtorprofile() {
+
+    useTitleHook('About You')
 
     const [activebtn , setActiveBtn] = useState("profile");
 

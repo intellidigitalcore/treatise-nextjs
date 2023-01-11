@@ -3,9 +3,12 @@ import { useEffect, useState } from "react";
 import { AuthorTagsearch } from "../../components/blogDetails/AuthorTagsearch";
 import { BlogContent } from "../../components/blogDetails/BlogContent";
 import { MorePosts } from "../../components/blogDetails/MorePosts";
+import useTitleHook from "../../components/customHook/useTitleHook";
 import Loader from "../../components/shared-components/Loader";
 
 function Blogdetails() {
+
+    useTitleHook("Blog Details")
 
     const router = useRouter();
 

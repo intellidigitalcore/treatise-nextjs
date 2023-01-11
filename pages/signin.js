@@ -1,6 +1,8 @@
 import Link from "next/link"
+import useTitleHook from "../components/customHook/useTitleHook"
 
-function signin() {
+function Signin() {
+    useTitleHook('Sign In')
   return (
     <div className=''>
     <div className="h-screen sign-in-up">
@@ -45,4 +47,4 @@ function signin() {
   )
 }
 
-export default signin
+export default Signin

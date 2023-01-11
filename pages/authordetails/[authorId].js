@@ -3,9 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import useTitleHook from "../../components/customHook/useTitleHook";
 import Subscribe from "../../components/home/Subscribe";
 
 function Author() {
+    useTitleHook('Authors')
     const router = useRouter();
     const id = router.query.authorId
    

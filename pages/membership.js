@@ -1,8 +1,10 @@
+import useTitleHook from "../components/customHook/useTitleHook"
 import Card from "../components/membership/Card"
 import FAQ from "../components/membership/FAQ"
 import Table from "../components/membership/Table"
 
-function membership() {
+function Membership() {
+  useTitleHook('Membership')
   return (
     <div className='mt-28 sm:mt-32 mb-10'>
         <div className="membership-plan mx-6 hidden 2xl:block">
@@ -34,4 +36,4 @@ function membership() {
   )
 }
 
-export default membership
+export default Membership

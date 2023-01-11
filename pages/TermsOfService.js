@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion';
+import useTitleHook from '../components/customHook/useTitleHook';
 
 function TermsOfService() {
+    useTitleHook('Terms of Services')
     const [activeTab, setActiveTab] = useState('terms');
     const handleTabClick = e =>{
         setActiveTab(e)

@@ -5,9 +5,11 @@ import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry'
 import {motion} from 'framer-motion'
 import Image from 'next/image'
 import Loader from '../components/shared-components/Loader'
+import useTitleHook from '../components/customHook/useTitleHook'
 
 function Allpost() {
 
+    useTitleHook('All Posts')
     const [showingFilter , setShowingFilter] = useState(false)
     const [posts, setPosts] = useState([])
     const [filterProduct , setFilterProduct] = useState([])

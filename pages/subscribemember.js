@@ -1,4 +1,7 @@
-function subscribemember() {
+import useTitleHook from "../components/customHook/useTitleHook"
+
+function Subscribemember() {
+    useTitleHook('Subscribe Membership')
   return (
     <div className="h-screen sign-in-up">
        <div className="flex justify-center py-[80px] sm:py-[160px] h-full w-full ">
@@ -26,4 +29,4 @@ function subscribemember() {
   )
 }
 
-export default subscribemember
+export default Subscribemember

@@ -6,6 +6,7 @@ import { convertToHTML } from "draft-convert";
 import DOMPurify from "dompurify";
 import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
 import Image from 'next/image';
+import useTitleHook from '../components/customHook/useTitleHook';
 const Editor = dynamic(
     () => import('react-draft-wysiwyg').then((mod) => mod.Editor),
     { ssr: false }
@@ -13,6 +14,8 @@ const Editor = dynamic(
 
 
 function Createblog() {
+
+    useTitleHook('Create Blog')
       
     const [editorState, setEditorState] = useState(() =>
         EditorState.createEmpty()

@@ -1,6 +1,8 @@
 import Link from 'next/link'
+import useTitleHook from '../components/customHook/useTitleHook'
 
 function NotFoundPage() {
+  useTitleHook("Not Found")
   return (
     <div className="mt-[196px] mb-[100px] sm:mt-[214px] sm:mb-[150px]">
         <div className="flex justify-center items-center mx-[5%]">

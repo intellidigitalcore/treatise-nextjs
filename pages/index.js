@@ -9,10 +9,13 @@ import AllPost from '../components/home/AllPost'
 import Subscribe from '../components/home/Subscribe'
 import Loader from '../components/shared-components/Loader'
 import { useEffect, useState } from 'react'
+import useTitleHook from '../components/customHook/useTitleHook'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
+  useTitleHook('Home')
 
   const [isLoading, setIsLoading] = useState(true)
 
